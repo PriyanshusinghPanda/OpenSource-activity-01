@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
 body {
     /* Issue: Change the default font */
-    font-family: "Kablammo";
+    font-family: "Kablammo", sans-serif;
     margin: 0;
     padding: 0;
     /* Issue: Change the page's background color */
