@@ -1,18 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* --- Global Styles & Issues --- */
 body {
     /* Issue: Change the default font */
-    font-family: serif;
+    font-family: "Pacifico",serif;
     margin: 0;
     padding: 0;
     /* Issue: Change the page's background color */
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #060240;
+    color: #fada08;
 }
 
 .container {
     width: 90%;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #15d428;
     /* Issues: Add padding, a border, rounded corners, a box-shadow, and a max-width */
     /* hi */
 }
@@ -20,13 +22,13 @@ body {
 a {
     /* Issue: Remove the underline */
     text-decoration: underline;
-    color: #007BFF;
+    color: #0971ef;
 }
 
 /* --- Header & Navigation Issues --- */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #dfe23a;
+    color: rgb(227, 28, 58);
 }
 
 nav ul {
@@ -89,8 +91,8 @@ form textarea {
 
 form button {
     /* Issue: Style this button to be more prominent */
-    background-color: #ddd;
-    border: 1px solid #ccc;
+    background-color: #d67835;
+    border: 1px solid #99f099;
     padding: 10px 15px;
     cursor: pointer;
 }
