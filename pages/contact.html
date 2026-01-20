@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jane Doe</title>
+    <meta name="description" content="Contact Jane Doe via email using this form.">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -13,33 +14,33 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
+    <main class="container">
         <h1>Contact Me</h1>
         <p>Feel free to reach out via the form below.</p>
 
-        <!-- Issue: This form has multiple accessibility and HTML issues -->
         <form id="contact-form">
-            <!-- Issue: Missing <label> tags and `name` attributes -->
-            <input type="text" placeholder="Your Name">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-            <!-- Issue: Incorrect `type` attribute, should be "email" -->
-            <input type="text" placeholder="Your Email">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-            <!-- Issue: Missing `required` attribute -->
-            <textarea placeholder="Your Message"></textarea>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
-            <!-- Issue: Missing type="submit" -->
-            <button>Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
         <div id="form-message"></div>
-    </div>
+    </main>
 
-    <!-- Issue: A site-wide footer is missing -->
+    <footer>
+        <p>&copy; 2025 Jane Doe | Built with ❤️ and open-source</p>
+    </footer>
 
     <script src="../script.js"></script>
 </body>

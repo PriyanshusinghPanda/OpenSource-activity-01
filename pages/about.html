@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>About Me | Jane Doe</title>
+    <meta name="description" content="Learn more about Jane Doe, her skills, and experience.">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -11,28 +12,29 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
+    <main class="container">
         <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
 
         <h2>My Skills</h2>
-        <!-- Issue: This list should use <ul> and <li> tags, not <br> -->
-        <div class="skills">
-            HTML & CSS<br>
-            JavaScript<br>
-            Responsive Design<br>
-            Git & GitHub
-        </div>
-    </div>
+        <ul class="skills"> 
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </main>
 
-    <!-- Issue: A site-wide footer is missing -->
+    <footer>
+        <p>&copy; 2025 Jane Doe | Built with ❤️ and open-source</p>
+    </footer>
 
     <script src="../script.js"></script>
 </body>

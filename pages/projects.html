@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Page</title>
+    <title>Projects | Jane Doe</title>
+    <meta name="description" content="Explore Jane Doe's portfolio projects.">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -12,40 +13,44 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
+    <main class="container">
         <h1>My Projects</h1>
-        <!-- Issue: This section needs to be styled as a responsive grid -->
         <div class="project-gallery">
+            <figure class="project-card">
+                <img src="../assets/project-placeholder.png" alt="Screenshot of Project One">
+                <figcaption>
+                    <h3>Project One</h3>
+                    <p>A short description of the first amazing project.</p>
+                </figcaption>
+            </figure>
 
-            <!-- Issue: These should be refactored to use <figure> and <figcaption> -->
-            <div class="project-card">
-                <img src="../assets/project-placeholder.png" alt="A placeholder image for a project.">
-                <h3>Project One</h3>
-                <p>A short description of the first amazing project.</p>
-            </div>
+            <figure class="project-card">
+                <img src="../assets/project-placeholder.png" alt="Screenshot of Project Two">
+                <figcaption>
+                    <h3>Project Two</h3>
+                    <p>A short description of the second amazing project.</p>
+                </figcaption>
+            </figure>
 
-            <div class="project-card">
-                <img src="../assets/project-placeholder.png" alt="A placeholder image for a project.">
-                <h3>Project Two</h3>
-                <p>A short description of the second amazing project.</p>
-            </div>
-
-            <div class="project-card">
-                <img src="../assets/project-placeholder.png" alt="A placeholder image for a project.">
-                <h3>Project Three</h3>
-                <p>A short description of the third amazing project.</p>
-            </div>
-
+            <figure class="project-card">
+                <img src="../assets/project-placeholder.png" alt="Screenshot of Project Three">
+                <figcaption>
+                    <h3>Project Three</h3>
+                    <p>A short description of the third amazing project.</p>
+                </figcaption>
+            </figure>
         </div>
-    </div>
+    </main>
 
-    <!-- Issue: A site-wide footer is missing -->
+    <footer>
+        <p>&copy; 2025 Jane Doe | Built with ❤️ and open-source</p>
+    </footer>
 
     <script src="../script.js"></script>
 </body>
